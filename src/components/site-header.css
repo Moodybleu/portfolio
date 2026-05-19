@@ -1,0 +1,119 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.site-header-burger {
+  display: none;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.site-header-burger svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.site-header-desktop-nav {
+  display: flex;
+  flex: 1;
+}
+
+.site-header-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  border: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.site-header-mobile {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: fixed;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.site-header-mobile--open {
+  display: flex;
+}
+
+.site-header-mobile-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  justify-content: space-between;
+}
+
+.site-header-mobile-title {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #000000;
+}
+
+.site-header-close {
+  display: flex;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-header-close svg {
+  width: 24px;
+  height: 24px;
+  fill: #595959;
+}
+
+.site-header-mobile-nav.navigation-links-nav {
+  align-items: flex-start;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+
+.site-header-mobile-nav .navigation-links-navlink,
+.site-header-mobile-nav .navigation-links-navlink1,
+.site-header-mobile-nav .navigation-links-navlink2,
+.site-header-mobile-nav .navigation-links-navlink3,
+.site-header-mobile-nav .navigation-links-navlink4 {
+  color: #000000;
+  margin-left: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.site-header-mobile-nav .navigation-links-navlink {
+  padding-right: 0;
+}
+
+@media (max-width: 767px) {
+  .site-header-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+  }
+
+  .site-header-desktop-nav {
+    display: none;
+  }
+}

@@ -1,0 +1,27 @@
+.social-links {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--dl-space-space-unit);
+}
+
+.social-links__link {
+  display: flex;
+  line-height: 0;
+}
+
+.social-links__link svg {
+  width: 24px;
+  height: 24px;
+  fill: #d0cccc;
+}
+
+.app-header--home .social-links__link svg {
+  fill: #000000;
+}
+
+@media (max-width: 479px) {
+  .social-links {
+    display: none;
+  }
+}

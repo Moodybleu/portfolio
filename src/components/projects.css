@@ -1,0 +1,141 @@
+.projects {
+  width: 100%;
+  max-width: 1280px;
+  margin: 51px auto 0;
+  padding: var(--dl-space-space-threeunits);
+  box-sizing: border-box;
+}
+
+.projects-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.projects-item {
+  display: grid;
+  grid-template-columns: minmax(320px, 400px) minmax(0, 1fr);
+  column-gap: 48px;
+  align-items: start;
+}
+
+.projects-item__media {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d0d0d;
+  border: 1px solid #2a2a2a;
+  box-sizing: border-box;
+}
+
+.projects-item__media img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.projects-item__content {
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.projects-item__label {
+  display: block;
+  flex-shrink: 0;
+  color: var(--dl-color-gray-500);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: var(--dl-space-space-unit);
+}
+
+.projects-item__title-link {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.projects-item__title {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 var(--dl-space-space-unit);
+}
+
+.projects-item__description {
+  flex: 1;
+  min-height: 0;
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+}
+
+.projects-item__description::-webkit-scrollbar {
+  width: 6px;
+}
+
+.projects-item__description::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 3px;
+}
+
+.projects-root-class-name {
+  margin-top: 0;
+}
+
+@media (max-width: 991px) {
+  .projects {
+    max-width: 100%;
+  }
+
+  .projects-item {
+    grid-template-columns: 1fr;
+    row-gap: var(--dl-space-space-twounits);
+  }
+
+  .projects-item__media {
+    max-width: 100%;
+  }
+
+  .projects-item__content {
+    max-height: none !important;
+    overflow: visible;
+  }
+
+  .projects-item__description {
+    overflow-y: visible;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+
+  .projects-list {
+    gap: 56px;
+  }
+}
+
+@media (max-width: 479px) {
+  .projects {
+    padding: var(--dl-space-space-twounits) var(--dl-space-space-unit);
+  }
+
+  .projects-list {
+    gap: 48px;
+  }
+}
