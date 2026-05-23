@@ -2,6 +2,7 @@ import React, { useLayoutEffect, useRef, useState } from 'react'
 
 import PropTypes from 'prop-types'
 
+import petPalImage from '../assets/pet-pal-dashboard.png'
 import './projects.css'
 
 const PROJECT_ITEMS = [
@@ -37,7 +38,7 @@ const PROJECT_ITEMS = [
     label: 'Project 4',
     title: 'Pet Pal',
     href: 'https://github.com/Moodybleu/pet-pal-client',
-    image: '/playground_assets/pet-pal-screenshot.png?v=2',
+    image: petPalImage,
     alt: 'Pet Pal app screenshot',
     description:
       "Pet Pals is an all-in-one app for pet owners, initially focused on dog owners, but with plans to expand to support all types of pets in the future. This app is designed to make it easy for pet owners to manage their pet's daily needs, including tracking feeding times, potty breaks, appointments, playdates, vet visits, and medication reminders. It also allows you to store relevant information from vet appointments, making it a convenient one-stop-shop for all your pet care needs.",
