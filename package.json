@@ -20,6 +20,7 @@
   "scripts": {
     "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
     "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
+    "vercel-build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
     "preview": "npm run build && npx --yes serve@14 -s build -l 3000",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
